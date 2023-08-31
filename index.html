@@ -62,10 +62,48 @@
         .project p {
             color: #d7d7d7;
         }
+        .navbar {
+            background-color: #333333;
+            height: 60px;
+        }
+
+        .nav-links {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+        }
+
+        .nav-item {
+          font-family: sans-serif;
+          padding: 0 15px;
+        }
+
+        .nav-link {
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 10px;
+          transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+          background-color: #555555;
+        }
     </style>
 </head>
 
 <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="/alexgpt.html" class="nav-link">AlexGPT</a></li>
+        <li class="nav-item"><a href="https://youtube.com/@s7mplex" class="nav-link">Мой Youtube</a></li>
+      </ul>
+    </nav>
     <div class="container">
         <div class="intro-section">
             <h1>Работы S7mplex</h1>
