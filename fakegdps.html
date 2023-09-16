@@ -182,6 +182,19 @@
             margin: 0; /* Remove default margin */
             font-size: 14px; /* Adjust font size as needed */
         }
+        .ftitle {
+            flex: 1; /* Занимает всю доступную ширину на этой стороне */
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        /* Стили для текста */
+        .ftext {
+            flex: 1; /* Занимает всю доступную ширину на этой стороне */
+            font-size: 16px;
+            text-align: left;
+        }
     </style>
 </head>
 
@@ -204,11 +217,17 @@
             <p>Приятный GMD приватный сервер.</p>
         </div>
         <div class="button-container">
-            <a href="#" id="createGDPS" class="button" href="https://gofruit.space/gdps/01KG">Скачать GDPS</a>
+            <a id="createGDPS" class="button" href="https://gofruit.space/gdps/01KG">Скачать GDPS</a>
             <a class="greybutton" href="https://discord.gg/e44A8Bkcu4">Наш дискорд</a>
         </div>
     </div>
-
+        
+    <div class='ftitle'>
+        <h2>Кто мы?</h2>
+    </div>
+    <div class='ftext'>
+        <p>Мы это приватный Geometry Dash сервер, на котором вы можете реально погрузится в игру.</p>
+    </div>
     <footer>
         <p>2023-2023 S7mplex</p>
     </footer>
