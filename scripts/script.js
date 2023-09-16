@@ -7,8 +7,8 @@ header.addEventListener('mousemove', (e) => {
     const headerWidth = header.offsetWidth;
     const headerHeight = header.offsetHeight;
 
-    const moveX = (mouseX / headerWidth) * 30 - 15;
-    const moveY = (mouseY / headerHeight) * 30 - 15;
+    const moveX = (mouseX / headerWidth) * 15 - 15;
+    const moveY = (mouseY / headerHeight) * 15 - 15;
 
     movingHeader.style.transform = `translate(${moveX}px, ${moveY}px)`;
 });
