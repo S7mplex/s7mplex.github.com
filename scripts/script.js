@@ -4,11 +4,10 @@ const movingHeader = document.getElementById('moving-header');
 header.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
-    const headerWidth = header.offsetWidth;
-    const headerHeight = header.offsetHeight;
 
-    const moveX = (mouseX / headerWidth) * 15 - 15;
-    const moveY = (mouseY / headerHeight) * 15 - 15;
+    // Adjust the multiplication factor to control the speed of movement
+    const moveX = (mouseX - header.offsetWidth / 2) / 10;
+    const moveY = (mouseY - header.offsetHeight / 2) / 10;
 
     movingHeader.style.transform = `translate(${moveX}px, ${moveY}px)`;
 });
