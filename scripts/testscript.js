@@ -3,4 +3,3 @@ function createGDPS() {
   fs.mkdir('/'+prompt());
   console.log('created dir for gdps');
 }
-
