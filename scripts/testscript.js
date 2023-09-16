@@ -1,1 +1,4 @@
-console.log("test click!");
+function click() {
+  console.log("test click!");
+}
+
