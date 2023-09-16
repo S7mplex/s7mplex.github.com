@@ -186,9 +186,6 @@
 
 <body>
     <script src="/scripts/testscript.js"></script>
-    <script>function d(){
-        console.log('clik');
-    }</script>
     <nav class="navbar">
       <ul class="nav-links">
         <li class="nav-item"><a href="/" class="nav-link">Главная</a></li>
@@ -211,6 +208,12 @@
             <a class="greybutton">Наш дискорд</a>
         </div>
     </div>
+    <script>
+        document.getElementById("createGDPS").addEventListener("click", function () {
+            click();
+        });
+    </script>
+
     <footer>
         <p>2023-2023 HydrogenTeam</p>
     </footer>
