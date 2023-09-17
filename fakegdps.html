@@ -72,37 +72,37 @@
         .project p {
             color: #d7d7d7;
         }
+        /* Style the navigation bar */
         .navbar {
-            background-color: #292929;
-            height: 60px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
         }
 
+        /* Style the navigation links */
         .nav-links {
-          display: flex;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          justify-content: space-between;
-          align-items: center;
-          height: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
 
         .nav-item {
-          font-family: sans-serif;
-          padding: 0 15px;
+            display: inline;
+            margin: 0 10px;
         }
 
-        .nav-link {
-          color: #ffffff;
-          text-decoration: none;
-          font-weight: bold;
-          padding: 10px;
-          transition: all 0.3s ease;
+        .nav-item a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
 
-        .nav-link:hover {
-          background-color: #555555;
+        .nav-item a:hover {
+            color: #aaa;
         }
+
         header {
             background-image: url('imgs/bg.jpg');
             background-size: cover;
@@ -210,35 +210,6 @@
             justify-content: space-between;
         }
             /* Style the navigation bar */
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-/* Style the navigation links */
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.nav-item {
-    display: inline;
-    margin: 0 10px;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-item a:hover {
-    color: #aaa;
-}
         @media screen and (max-width: 768px) {
             .button {
                 padding: 5px 10px
