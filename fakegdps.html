@@ -209,6 +209,13 @@
             display: flex;
             justify-content: space-between;
         }
+        .nav-button-container {
+            display: flex;
+            justify-content: center; /* Horizontal centering */
+            align-items: center; /* Vertical centering */
+        }
+
+        
             /* Style the navigation bar */
         @media screen and (max-width: 768px) {
             .button {
@@ -239,8 +246,11 @@
 
 <body>
     <nav class="navbar">
-        <li class="nav-item"><a href="https://gofruit.space/gdps/01KG/panel">Панель управления</a></li>
-        <li class="nav-item"><a href="https://gofruit.space/gdps/01KG/music">Загрузить музыку</a></li>
+        <div class="nav-button-container">
+            <li class="nav-item"><a href="https://gofruit.space/gdps/01KG/panel">Панель управления</a></li>
+            <li class="nav-item"><a href="https://gofruit.space/gdps/01KG/music">Загрузить музыку</a></li>
+        </div>
+
     </nav>
     <div class="container">
         <div class="title-container">
