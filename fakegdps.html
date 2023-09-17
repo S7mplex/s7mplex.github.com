@@ -16,6 +16,41 @@
             background-attachment: fixed;  
             background-size: cover;
         }
+        /* Small screens (phones) */
+        @media only screen and (max-width: 600px) {
+        /* Adjust styles for small screens here */
+            body {
+                background-attachment: scroll;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+
+    /* Medium screens (tablets) */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        /* Adjust styles for medium screens here */
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        background-color: #292929;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+/* Show menu when menu button is clicked */
+    .menu-button:checked + .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
         p {
             color: #efefef;
