@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeGDPS</title>
+    <link rel="icon" href="https://i.ibb.co/Qp75TLs/logofs.png">
+
+    <style>
+        body {
+            background-color: #303030;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.ibb.co/HXgwnz0/luxa-org-brightness-wallpaper-mania-com-High-resolution-wallpaper-background-ID-77700436310.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+        /* Small screens (phones) */
+
+
+
+
+        p {
+            color: #efefef;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        h2 {
+            color: #ffffff;
+        }
+        h3 {
+            color: #ffffff;
+        }
+
+        .dark-button {
+            background-color: #292929;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .dark-button:hover {
+            background-color: #555555;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .projects-section {
+            margin-bottom: 30px;
+        }
+
+        .project {
+            padding: 10px;
+            background-color: #505050;
+            margin-bottom: 15px;
+        }
+
+
+        .project p {
+            color: #d7d7d7;
+        }
+        /* Style the navigation bar */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        /* Style the navigation links */
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav-item {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-item a:hover {
+            color: #aaa;
+        }
+
+        header {
+            background-image: url('imgs/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            width: 100opx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #moving-header {
+            font-size: 28px;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+        .title-container {
+            position: relative;
+            text-align: center;
+            width: 100%
+        }
+
+        .background-image {
+            width: 100%;
+            max-height: 400px; /* Adjust the height as needed */
+        }
+
+        .dark-panel {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Adjust the background color and opacity */
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff; /* Adjust the text color */
+            font-size: 24px; /* Adjust the font size as needed */
+            padding: 20px; /* Adjust the padding as needed */
+        }
+
+        .button-container {
+            position: absolute;
+            bottom: 20px; /* Adjust the vertical position as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 5px; /* Adjust the button spacing */
+            padding: 10px 20px; /* Adjust the button size */
+            background-color: #aa00ff; /* Adjust the button color */
+            color: #ffffff; /* Adjust the button text color */
+            text-decoration: none;
+            border-radius: 5px; /* Adjust the button border radius */
+            font-weight: bold;
+        }
+        .greybutton {
+            display: inline-block;
+            margin: 5px; /* Adjust the button spacing */
+            padding: 10px 20px; /* Adjust the button size */
+            background-color: #858585; /* Adjust the button color */
+            color: #ffffff; /* Adjust the button text color */
+            text-decoration: none;
+            border-radius: 5px; /* Adjust the button border radius */
+            font-weight: bold;
+        }
+        /* Reset some default styles for the footer */
+        footer {
+            background-color: #333; /* Background color for the footer */
+            color: #fff; /* Text color for the copyright notice */
+            text-align: center; /* Center-align the text */
+            padding: 10px 0; /* Add some padding for spacing */
+        }
+
+        /* Style the copyright text */
+        footer p {
+            margin: 0; /* Remove default margin */
+            font-size: 14px; /* Adjust font size as needed */
+        }
+        .ftitle {
+            flex: 1; /* Занимает всю доступную ширину на этой стороне */
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        /* Стили для текста */
+        .ftext {
+            flex: 1; /* Занимает всю доступную ширину на этой стороне */
+            font-size: 16px;
+            text-align: left;
+        }
+        .fcontainer {
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-button-container {
+            display: flex;
+            justify-content: center; /* Horizontal centering */
+            align-items: center; /* Vertical centering */
+        }
+
+        
+            /* Style the navigation bar */
+        @media screen and (max-width: 768px) {
+            .button {
+                padding: 5px 10px
+            }
+            .greybutton {
+                padding: 5px 10px
+            }
+            a {
+                font-size: 14px
+            }
+            h3 {
+                font-size: 16px
+            }
+            h2 {
+                font-size: 18px
+            }
+            h1 {
+                font-size:20px
+            }
+            p {
+                font-size: 12px
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-button-container">
+            <li class="nav-item"><a href="https://gofruit.space/gdps/01KG/panel">Панель управления</a></li>
+            <li class="nav-item"><a href="https://gofruit.space/gdps/01KG/music">Загрузить музыку</a></li>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="title-container">
+        <img class="background-image" src="https://kartinki.pics/uploads/posts/2022-02/1644978980_45-kartinkin-net-p-kartinki-geometriya-dash-48.jpg" alt="Image Description">
+        <div class="dark-panel"></div>
+        <div class="title">
+            <h1><span style="color: #aa00ff"><i class="fa-solid fa-gamepad"></i> Fake</span>Servers</h1>
+            <p><i class="fa-solid fa-gamepad-modern"></i> Fake Servers - <span style="color: #aa00ff">игровые сервера</span> для русского комьюнити.</p>
+        </div>
+        <div class="button-container">
+            <a class="button" href="https://discord.gg/e44A8Bkcu4" title="Тут можно получить поддержку от админов"><i class="fa-brands fa-discord"></i> Наш дискорд</a>
+        </div>
+
+    </div>
+
+        
+    <footer>
+        <p>2023-2023 S7mplex алл райтс ресервед<br>Сервак пилился на FruitSpace, а сайт на github pages</p>
+    </footer>
+    </div>
+</body>
+
+</html>
